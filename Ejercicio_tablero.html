@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>tablero</title>
+</head>
+
+<body>
+    <script>
+        let filas = prompt("¿De qué tamaño quieres tu tablero de ajedrez? introduce solo 1 número")
+        let tablero = ""
+        
+        for(i = 1; i <= filas; i = i + 1){
+            for(j = 1; j <= filas; j = j + 1){
+                if ((i+j) % 2 == 0){
+                    tablero += "O"
+                }
+                else 
+                    tablero += "X"
+
+                
+            }  
+            tablero += "\n"
+        }
+        console.log(tablero)
+    </script>
+</body>
+ 
+</html>
