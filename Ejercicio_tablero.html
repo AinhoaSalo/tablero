@@ -10,17 +10,18 @@
 
 <body>
     <script>
-        let filas = prompt("¿De qué tamaño quieres tu tablero de ajedrez? introduce solo 1 número")
-        let tablero = ""
+        let filas = prompt("¿De qué tamaño quieres tu tablero de ajedrez? introduce solo 1 número");
+        let tablero = "";
         
         for(i = 1; i <= filas; i = i + 1){
             for(j = 1; j <= filas; j = j + 1){
                 if ((i+j) % 2 == 0){
-                    tablero += "O"
+                    tablero += "O";
                 }
-                else 
-                    tablero += "X"
-
+                else{
+                    tablero += "X";
+                }
+                    
                 
             }  
             tablero += "\n"
