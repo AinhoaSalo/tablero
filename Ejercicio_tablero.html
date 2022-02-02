@@ -10,20 +10,20 @@
 
 <body>
     <script>
-        let filas = prompt("¿De qué tamaño quieres tu tablero de ajedrez? introduce solo 1 número");
+        let filas = parseint(prompt("¿De qué tamaño quieres tu tablero de ajedrez? introduce solo 1 número"));
+        let columnas = filas;
         let tablero = "";
         
-        for(i = 1; i <= filas; i = i + 1){
-            for(j = 1; j <= filas; j = j + 1){
+        for(let i = 0; i < filas; i++){
+            for(let j = 0; j < columnas; j++){
                 if ((i+j) % 2 == 0){
-                    tablero += "O";
-                }
-                else{
                     tablero += "X";
                 }
+                else{
+                    tablero += "O";
+                }
                     
-                
-            }  
+            }   n                      
             tablero += "\n"
         }
         console.log(tablero)
